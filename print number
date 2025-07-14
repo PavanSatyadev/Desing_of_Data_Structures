@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void printVal(int num) {
+    if (num <= 5) {
+        cout<<num;
+        printVal(num + 1);
+    }
+else {
+    return;
+}    
+}
+int main() {
+    printVal(1);
+}
